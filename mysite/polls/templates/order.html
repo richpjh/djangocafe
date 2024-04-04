@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>주문하기</title>
+</head>
+<body>
+    <h1>주문하시겠습니까?</h1>
+    <form method="post">
+        {% csrf_token %}
+        <button type="submit" name="yes">Yes</button>
+        <button type="submit" name="no">No</button>
+    </form>
+</body>
+</html>
